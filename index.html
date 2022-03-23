@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pokedexLaunchX.css">
+    <script src="./pokedexLaunchX.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <a href="index.html" class="item1"><img src="./images/logo-pokemon.jpg" alt="pokemon logo" width="250px" id="logo"></a>
+        </div>
+        <div align="center" class="item2">
+            <h1>Pokedex LaunchX</h1>
+        </div> 
+    </div>
+
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" placeholder="escribe tu pokemon" name="pokemon" autocomplete="off" id="poke">
+    </form>  
+    
+    <section data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img src="./images/pokeball.jpg" class="poke-img" alt="pokemon" width="200px">
+        </div>
+        <div data-poke-id class="id"></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+        <div data-poke-moves class="poke-moves"></div>
+    </section>
+  
+</body>
+</html>

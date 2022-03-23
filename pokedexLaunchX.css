@@ -1,0 +1,99 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    display: flex;
+}
+.item1 {
+    align-self: stretch; 
+}
+.item2 {
+    align-self: flex-end;
+    margin-left: 10%;
+}
+
+#logo {
+    border-radius: 10%;
+}
+
+body  {
+    background-image: url("./images/pokedex-background.jpg");
+    }
+
+h1 {
+    font-size: 80px;
+    font-weight:900;
+    margin-bottom: 7%;
+    color: #FFF;
+}
+
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+.poke-card::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-moves div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dotted black;
+}
+
